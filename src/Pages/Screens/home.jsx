@@ -1,25 +1,26 @@
 import "../../Styles/home_styles.css";
-import { Nav, DirButton } from "../../Components";
+import { motion } from "framer-motion";
 
 export const Home = () => {
   return (
     <>
-      <div className="contenedor">
-        <div className="btn_ref cv">
-          <DirButton
-            texto="Descargar CV"
-            dir="#"
-            icon="../../Public/Images/right_arrow.jpg"
+      <div className="home_contenedor">
+        <motion.div
+          transition={{ ease: "easeOut", duration: 2 }}
+          className="text_container"
+        >
+          <p className="saludo">Hello world, Im</p>
+          <span className="name">Richard Bonilla</span>
+          {/* componente de letras animadas */}
+          <p className="despedida">Welcome to my personal website 👋</p>
+        </motion.div>
+        <motion.div className="img_container">
+          <img
+            className="personal_img"
+            src="src/public/Images/perfilImg.jpg"
+            alt="Richard Bonilla"
           />
-        </div>
-        <div className="btn_ref ghb">
-          <DirButton
-            texto="Ir a Github"
-            dir="#"
-            icon="../../Public/Images/logo_github.jpg"
-          />
-        </div>
-        <Nav />
+        </motion.div>
       </div>
     </>
   );

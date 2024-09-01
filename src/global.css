@@ -9,3 +9,47 @@ body {
   margin: 0;
   font-family: Helvetica, sans-serif;
 }
+
+.contenedor_App {
+  width: calc(100% - 50px);
+  height: calc(100vh - 50px);
+  border: 1px solid #d9d9df;
+  border-radius: 10px;
+  margin: 25px;
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
+  background-image: url("https://i.giphy.com/media/v1.Y2lkPTc5MGI3NjExczBsYWF3MjAxZWxkdHNsbHk1NWlpcW1ndXp2NGJwMWk3cHg0ZHBkeSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/zgduo4kWRRDVK/giphy.gif");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.btn_ref {
+  width: 200px;
+  height: 50px;
+  background-color: #111;
+  position: absolute;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.cv {
+  top: 25px;
+  right: 25px;
+  border-left: 1px solid #fff;
+  border-bottom: 1px solid #fff;
+  border-radius: 0 0 0 10px;
+  padding: 0 0 5px 5px;
+}
+
+.ghb {
+  bottom: 25px;
+  left: 25px;
+  border-right: 1px solid #fff;
+  border-top: 1px solid #fff;
+  border-radius: 0 10px 0 0;
+  padding: 5px 5px 0 0;
+}

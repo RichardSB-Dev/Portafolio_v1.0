@@ -1,45 +1,30 @@
-.contenedor {
-  background-image: image-set("../Public/Images/background.jpg");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  width: calc(100% - 50px);
-  height: calc(100vh - 50px);
-  border: 1px solid #d9d9df;
-  border-radius: 10px;
-  margin: 25px;
-  display: flex;
-  justify-content: center;
-  align-items: end;
-  padding-bottom: 10px;
-  overflow: hidden;
-}
-
-.btn_ref {
-  width: 250px;
-  height: 70px;
-  background-color: #111;
-  position: absolute;
-  overflow: hidden;
+.home_contenedor {
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-wrap: wrap;
+  gap: 100px;
+  .name {
+    font-size: 5rem;
+    font-weight: bold;
+  }
 }
 
-.cv {
-  top: 25px;
-  right: 25px;
-  border-left: 1px solid #fff;
-  border-bottom: 1px solid #fff;
-  border-radius: 0 0 0 10px;
-  padding: 0 0 5px 5px;
+.text_container {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
 }
 
-.ghb {
-  bottom: 25px;
-  left: 25px;
-  border-right: 1px solid #fff;
-  border-top: 1px solid #fff;
-  border-radius: 0 10px 0 0;
-  padding: 5px 5px 0 0;
+.name,
+.saludo,
+.despedida {
+  color: #fff;
+}
+
+.personal_img {
+  width: 400px;
+  height: 400px;
+  border-radius: 50%;
+  border: 1px solid #f1f1f1;
 }

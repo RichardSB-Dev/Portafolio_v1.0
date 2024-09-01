@@ -1,18 +1,34 @@
+import { Link } from "react-router-dom";
+import PropTypes from "prop-types";
 import { ButtonNav } from "../Components";
 import "../Styles/comp_styles.css";
 
-export const Nav = () => {
+export const Nav = ({ routes = [] }) => {
+  console.log(routes);
+
   return (
     <>
       <div className="nav_container">
-        <span className="logo">LOGO</span>
+        <Link to={"/"} className="logo">
+          LOGO
+        </Link>
         <div className="btns_container">
-          <ButtonNav dir={"#"} text={"About"} />
-          <ButtonNav dir={"#"} text={"Contact"} />
-          <ButtonNav dir={"#"} text={"Portafolio"} />
-          <ButtonNav dir={"#"} text={"Proyects"} />
+          {routes.map(
+            (route) =>
+              route.name !== "home" && (
+                <ButtonNav
+                  key={route.name}
+                  dir={route.path}
+                  text={route.name}
+                />
+              )
+          )}
         </div>
       </div>
     </>
   );
+};
+
+Nav.propTypes = {
+  routes: PropTypes.array.isRequired,
 };

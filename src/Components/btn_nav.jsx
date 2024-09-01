@@ -1,13 +1,18 @@
+import { Link } from "react-router-dom";
+import PropTypes from "prop-types";
 import "../Styles/comp_styles.css";
 
 export const ButtonNav = ({ dir, text }) => {
   return (
     <>
-      <a href={dir} className="a_btn_nav">
-        <button className="btn_nav">
-          <span className="span_nav">{text}</span>
-        </button>
-      </a>
+      <Link className="link_nav" to={dir}>
+        {text}
+      </Link>
     </>
   );
+};
+
+ButtonNav.propTypes = {
+  dir: PropTypes.string.isRequired,
+  text: PropTypes.string.isRequired,
 };

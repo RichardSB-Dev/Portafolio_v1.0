@@ -1,37 +1,44 @@
 /*  ButtonNav   */
-.a_btn_nav {
+.link_nav {
   text-decoration: none;
-  .btn_nav {
-    border: none;
-    background-color: transparent;
-    .span_nav {
-      font-size: 20px;
-      color: #fff;
-    }
-  }
+  background-color: transparent;
+  border: none;
+  font-size: 1.3rem;
+  color: #fff;
+}
+
+.link_nav:hover {
+  border-bottom: 1px solid #fff;
+  transition: 0.2s linear;
+  font-weight: bold;
 }
 
 /*   Nav   */
 .nav_container {
-  width: 500px;
-  height: 70px;
-  border: 1px solid #212121;
-  border-radius: 10px;
-  display: flex;
   justify-content: space-around;
+  background-color: #ffffff1d;
+  border: 1px solid #ffffff20;
+  backdrop-filter: blur(16px) saturate(120%);
+  justify-self: center;
   align-items: center;
-  background-color: #080808;
+  border-radius: 10px;
+  position: absolute;
+  display: flex;
+  width: 600px;
+  height: 50px;
+  bottom: 30px;
 }
 
 .logo {
   font-size: 1.5rem;
   color: #fff;
+  text-decoration: none;
 }
 
 .btns_container {
-  display: flex;
   justify-content: space-around;
   align-items: center;
+  display: flex;
   gap: 15px;
 }
 
@@ -52,21 +59,55 @@
 }
 .dir_btn {
   background-color: transparent;
-  border: none;
+  justify-content: center;
+  align-items: center;
   display: flex;
-  gap: 20px;
+  display: flex;
+  border: none;
+  gap: 15px;
   .dir_span {
-    color: #fff;
     font-size: 1.2rem;
     font-weight: 600;
+    color: #fff;
   }
 }
-.iconDIr_container {
-  width: 60px;
-  height: 60px;
+.iconDir_container {
   border-radius: 50%;
-  border: 1px solid #fff;
+  overflow: hidden;
+  height: 27px;
+  width: 27px;
   .icon_dir {
+    border-radius: 50%;
+    object-fit: cover;
+    height: 25px;
+    width: 25px;
+  }
+}
+
+/*    Proyect Card   */
+.card-proyect_contenedor {
+  width: calc(100% - 10px);
+  height: 350px;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  backdrop-filter: blur(20px);
+  overflow: hidden;
+  img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    align-self: center;
+    border-radius: 0;
+  }
+  .title {
+    font-weight: 500;
     color: #fff;
+    padding-left: 5px;
+  }
+  p {
+    font-size: 1rem;
+    color: #fff;
+    padding-left: 5px;
   }
 }
