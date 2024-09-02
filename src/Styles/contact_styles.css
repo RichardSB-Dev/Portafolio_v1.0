@@ -1,0 +1,14 @@
+.ContactUs_container {
+  justify-content: space-around;
+  flex-direction: column;
+  align-items: center;
+  display: flex;
+  height: 500px;
+  width: 800px;
+  margin: auto;
+}
+
+.icons_container {
+  display: flex;
+  gap: 5px;
+}
