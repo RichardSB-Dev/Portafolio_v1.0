@@ -35,6 +35,14 @@
   text-decoration: none;
 }
 
+.logo:hover {
+  scale: 1.1;
+}
+
+.logo:active {
+  scale: 1;
+}
+
 .btns_container {
   justify-content: space-around;
   align-items: center;

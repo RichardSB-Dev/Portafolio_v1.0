@@ -1,9 +1,15 @@
+import { easeInOut, motion } from "framer-motion";
 import "../Styles/comp_styles.css";
 
 export const ContactUs = () => {
   return (
     <>
-      <div className="form-container">
+      <motion.div
+        className="form-container"
+        initial={{ opacity: 0, scale: 0.5, type: "spring" }}
+        animate={{ opacity: 1, scale: 1, type: "spring" }}
+        transition={{ duration: 1, ease: easeInOut }}
+      >
         <form className="form">
           <div className="form-group">
             <label htmlFor="email">Company Email</label>
@@ -23,7 +29,7 @@ export const ContactUs = () => {
             Submit
           </button>
         </form>
-      </div>
+      </motion.div>
     </>
   );
 };

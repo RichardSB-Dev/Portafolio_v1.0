@@ -1,9 +1,15 @@
+import { easeInOut, motion } from "framer-motion";
 import "../Styles/comp_styles.css";
 
 export const SocialsIcons = () => {
   return (
     <>
-      <button className="button_socialIcons">
+      <motion.button
+        className="button_socialIcons"
+        initial={{ opacity: 0, scale: 0.5, type: "spring", y: 200 }}
+        animate={{ opacity: 1, scale: 1, type: "spring", y: 0 }}
+        transition={{ duration: 1, ease: easeInOut }}
+      >
         <svg
           viewBox="0 0 24 24"
           fill="none"
@@ -20,8 +26,13 @@ export const SocialsIcons = () => {
             fill="currentColor"
           ></path>
         </svg>
-      </button>
-      <button className="button_socialIcons">
+      </motion.button>
+      <motion.button
+        className="button_socialIcons"
+        initial={{ opacity: 0, scale: 0.5, type: "spring", y: 200 }}
+        animate={{ opacity: 1, scale: 1, type: "spring", y: 0 }}
+        transition={{ duration: 1, ease: easeInOut }}
+      >
         <svg
           viewBox="0 0 24 24"
           fill="none"
@@ -42,9 +53,13 @@ export const SocialsIcons = () => {
             fill="currentColor"
           ></path>
         </svg>
-      </button>
-
-      <button className="button_socialIcons">
+      </motion.button>
+      <motion.button
+        className="button_socialIcons"
+        initial={{ opacity: 0, scale: 0.5, type: "spring", y: 200 }}
+        animate={{ opacity: 1, scale: 1, type: "spring", y: 0 }}
+        transition={{ duration: 1, ease: easeInOut }}
+      >
         <svg
           viewBox="0 0 24 24"
           fill="currentColor"
@@ -60,9 +75,14 @@ export const SocialsIcons = () => {
             fillRule="evenodd"
           ></path>
         </svg>
-      </button>
+      </motion.button>
 
-      <button className="button_socialIcons">
+      <motion.button
+        className="button_socialIcons"
+        initial={{ opacity: 0, scale: 0.5, type: "spring", y: 200 }}
+        animate={{ opacity: 1, scale: 1, type: "spring", y: 0 }}
+        transition={{ duration: 1, ease: easeInOut }}
+      >
         <svg
           viewBox="0 0 24 24"
           fill="currentColor"
@@ -78,9 +98,14 @@ export const SocialsIcons = () => {
             fillRule="evenodd"
           ></path>
         </svg>
-      </button>
+      </motion.button>
 
-      <button className="button_socialIcons">
+      <motion.button
+        className="button_socialIcons"
+        initial={{ opacity: 0, scale: 0.5, type: "spring", y: 200 }}
+        animate={{ opacity: 1, scale: 1, type: "spring", y: 0 }}
+        transition={{ duration: 1, ease: easeInOut }}
+      >
         <svg
           viewBox="0 0 24 24"
           fill="currentColor"
@@ -96,7 +121,7 @@ export const SocialsIcons = () => {
             fillRule="evenodd"
           ></path>
         </svg>
-      </button>
+      </motion.button>
     </>
   );
 };
